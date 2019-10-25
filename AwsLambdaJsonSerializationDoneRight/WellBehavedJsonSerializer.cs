@@ -6,17 +6,25 @@ using Newtonsoft.Json.Serialization;
 public class WellBehavedJsonSerializer : Amazon.Lambda.Serialization.Json.JsonSerializer
 {
     public WellBehavedJsonSerializer()
-        : base(CustomizeSerializerSettings, new CamelCaseNamingStrategy())
+        : base(
+            // Step 1: Customize the serializer settings
+            CustomizeSerializerSettings, 
+            // Step 2: Use Pascal Case
+            new CamelCaseNamingStrategy()
+            )
     {
 
     }
 
-    private static void CustomizeSerializerSettings(JsonSerializerSettings serializerSettings)
+    private static void CustomizeSerializerSettings(JsonSerializerSettings settings)
     {
-        serializerSettings.Converters = new List<JsonConverter>
+        settings.Converters = new List<JsonConverter>
         {
-            new StringEnumConverter() { CamelCaseText = false },
+            new StringEnumConverter() 
+            {
+                CamelCaseText = false 
+            },
         };
-        serializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
+        settings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
     }
 }
