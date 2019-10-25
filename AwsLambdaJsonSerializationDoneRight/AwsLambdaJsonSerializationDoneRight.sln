@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsLambdaJsonSerializationDoneRight", "AwsLambdaJsonSerializationDoneRight.csproj", "{1CA4274D-7E3B-4BDF-8C2E-FD08D2DE7C3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CA4274D-7E3B-4BDF-8C2E-FD08D2DE7C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA4274D-7E3B-4BDF-8C2E-FD08D2DE7C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA4274D-7E3B-4BDF-8C2E-FD08D2DE7C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA4274D-7E3B-4BDF-8C2E-FD08D2DE7C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {398A92EC-25E7-4609-AECE-C1A8C17120C8}
+	EndGlobalSection
+EndGlobal
